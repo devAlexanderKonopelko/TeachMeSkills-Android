@@ -4,4 +4,12 @@
     <string name="see_second_task">See Second Task</string>
     <string name="see_third_task">See Third Task</string>
     <string name="my_first_app">Моё первое приложение</string>
+    <string name="see_flags">See flags</string>
+    <string name="see_animation">See animation</string>
+    <string name="armenia">Armenia</string>
+    <string name="austria">Austria</string>
+    <string name="belgium">Belgium</string>
+    <string name="latvia">Latvia</string>
+    <string name="denmark">Denmark</string>
+    <string name="spain">Spain</string>
 </resources>
