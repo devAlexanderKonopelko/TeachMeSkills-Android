@@ -17,17 +17,9 @@ class AnimationActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         imageAnimated.apply {
+            setBackgroundResource(R.drawable.animation_cat)
 
-            val animation = AnimationDrawable()
-            animation.isOneShot = false
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animation.addFrame(getDrawable(R.drawable.image0)!!, 250)
-                animation.addFrame(getDrawable(R.drawable.image1)!!, 250)
-                animation.addFrame(getDrawable(R.drawable.image2)!!, 250)
-                animation.addFrame(getDrawable(R.drawable.image3)!!, 250)
-            }
-
-            this.background = animation
+            val animation = background as AnimationDrawable
             animation.start()
         }
     }
