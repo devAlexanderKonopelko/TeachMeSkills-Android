@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">FirstApp</string>
     <string name="see_first_task">See First Task</string>
-    <string name="see_second_task">See Second Task</string>
-    <string name="see_third_task">See Third Task</string>
     <string name="my_first_app">Моё первое приложение</string>
     <string name="see_flags">See flags</string>
     <string name="see_animation">See animation</string>
@@ -12,4 +10,15 @@
     <string name="latvia">Latvia</string>
     <string name="denmark">Denmark</string>
     <string name="spain">Spain</string>
+
+    <string name="confirmed">Confirmed</string>
+    <string name="recovered">Recovered</string>
+    <string name="dead">Dead</string>
+    <string name="_0">0</string>
+    <string name="_1_confirmed">+1 Confirmed</string>
+    <string name="_1_recovered">+1 Recovered</string>
+    <string name="_1_dead">+1 Dead</string>
+    <string name="refresh_data">Refresh Data</string>
+    <string name="flags_and_animation">Flags and Animation</string>
+    <string name="coronavirus_app">CoronaVirus App</string>
 </resources>
