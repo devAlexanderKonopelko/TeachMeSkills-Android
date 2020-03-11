@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".AnimationActivity"/>
         <activity android:name=".FlagsActivity" />
         <activity android:name=".SecondTaskActivity" />
         <activity android:name=".FirstTaskActivity" />
@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainCoronavirusActivity" />
     </application>
 
 </manifest>
