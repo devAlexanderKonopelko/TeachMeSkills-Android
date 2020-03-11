@@ -16,6 +16,7 @@ class MainCoronavirusActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_coronavirus)
+
         val model = ViewModelProvider(this).get(MyViewModel::class.java)
         lifecycle.addObserver(MyLifeObserver())
 

@@ -25,5 +25,9 @@ class MainActivity : AppCompatActivity() {
             val newIntent = Intent(this, MainCoronavirusActivity::class.java)
             startActivity(newIntent)
         }
+        main_button_4.setOnClickListener {
+            val newIntent = Intent(this, com.example.firstapp.flowers.MainActivityFlowers::class.java)
+            startActivity(newIntent)
+        }
     }
 }
