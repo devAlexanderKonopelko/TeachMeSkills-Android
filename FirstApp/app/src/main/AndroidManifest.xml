@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.firstapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +18,11 @@
         <activity android:name=".FlagsActivity" />
         <activity android:name=".SecondTaskActivity" />
         <activity android:name=".FirstTaskActivity" />
+
+        <activity android:name=".flowers.DetailsActivity"/>
+        <activity android:name=".flowers.AddFlowerActivity"/>
+        <activity android:name=".flowers.MainFlowerActivity"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

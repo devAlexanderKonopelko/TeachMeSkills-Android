@@ -21,4 +21,15 @@
     <string name="refresh_data">Refresh Data</string>
     <string name="flags_and_animation">Flags and Animation</string>
     <string name="coronavirus_app">CoronaVirus App</string>
+
+    <string name="add_flower">Add flower</string>
+    <string name="remove_2">Remove 2</string>
+    <string name="add_1">Add 1</string>
+    <string name="remove_1">Remove 1</string>
+    <string name="add_2">Add 2</string>
+    <string name="add">Add</string>
+    <string name="price">Price</string>
+    <string name="name">Name</string>
+    <string name="img_url">img url</string>
+    <string name="flowers_app">Flowers app</string>
 </resources>
