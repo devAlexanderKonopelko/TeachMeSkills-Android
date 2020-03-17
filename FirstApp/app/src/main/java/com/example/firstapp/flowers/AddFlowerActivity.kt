@@ -18,9 +18,9 @@ class AddFlowerActivity : AppCompatActivity() {
         setContentView(R.layout.add_flower_layout)
 
         addFlowerToList.setOnClickListener {
-            var url: String?
-            var name: String?
-            var price: Double?
+            val url: String
+            val name: String
+            val price: Double
 
             if (imageUrl.text.isNotEmpty() && editFlowerName.text.isNotEmpty() && editFlowerPrice.text.isNotEmpty()) {
                 url = imageUrl.text.toString()

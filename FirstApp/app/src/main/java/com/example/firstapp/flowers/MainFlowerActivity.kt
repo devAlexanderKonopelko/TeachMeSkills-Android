@@ -33,22 +33,6 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
         bottomFragment.setOnClickListener(this)
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.e("START", "OnStart");
-        val model = ViewModelProvider(this).get(MyViewModel::class.java)
-
-        when (FlowersList.flowers.flowersList.size) {
-            1 -> {
-                model.setFlowerTopFragment(fragmentTop)
-            }
-            2 -> {
-                model.setFlowerTopFragment(fragmentTop)
-                model.setFlowerBottomFragment(fragmentBottom)
-            }
-        }
-    }
-
     override fun onClick(v: View?) {
         when (v?.id) {
             addFlower.id -> {
@@ -56,7 +40,7 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
                 startActivityForResult(newIntent, ADD_FLOWER)
             }
             addTopFragment.id -> {
-                if (fragmentTop.getFlower() != null) {
+                if (FlowersList.flowers.flowersList.size > 0) {
                     supportFragmentManager.beginTransaction().replace(topFragment.id, fragmentTop)
                         .commit()
                 } else {
@@ -68,7 +52,7 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             addBottomFragment.id -> {
-                if (fragmentBottom.getFlower() != null) {
+                if (FlowersList.flowers.flowersList.size > 0) {
                     supportFragmentManager.beginTransaction()
                         .replace(bottomFragment.id, fragmentBottom).commit()
                 } else {
@@ -80,7 +64,7 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             removeTopFragment.id -> {
-                if (fragmentTop.getFlower() != null) {
+                if (FlowersList.flowers.flowersList.size > 0) {
                     supportFragmentManager.beginTransaction().remove(fragmentTop).commit()
                 } else {
                     val newToast = Toast.makeText(
@@ -91,7 +75,7 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             removeBottomFragment.id -> {
-                if (fragmentBottom.getFlower() != null) {
+                if (FlowersList.flowers.flowersList.size > 0) {
                     supportFragmentManager.beginTransaction().remove(fragmentBottom).commit()
                 } else {
                     val newToast = Toast.makeText(
@@ -105,16 +89,16 @@ class MainFlowerActivity : AppCompatActivity(), View.OnClickListener {
 
             topFragment.id -> {
                 val newIntent = Intent(this, DetailsActivity::class.java)
-                newIntent.putExtra("URL", fragmentTop.getFlower()?.url)
-                newIntent.putExtra("NAME", fragmentTop.getFlower()?.name)
-                newIntent.putExtra("PRICE", fragmentTop.getFlower()?.price)
+                newIntent.putExtra("URL", FlowersList.flowers.flowersList[0].url)
+                newIntent.putExtra("NAME", FlowersList.flowers.flowersList[0].name)
+                newIntent.putExtra("PRICE", FlowersList.flowers.flowersList[0].price)
                 startActivity(newIntent)
             }
             bottomFragment.id -> {
                 val newIntent = Intent(this, DetailsActivity::class.java)
-                newIntent.putExtra("URL", fragmentBottom.getFlower()?.url)
-                newIntent.putExtra("NAME", fragmentBottom.getFlower()?.name)
-                newIntent.putExtra("PRICE", fragmentBottom.getFlower()?.price)
+                newIntent.putExtra("URL", FlowersList.flowers.flowersList[1].url)
+                newIntent.putExtra("NAME", FlowersList.flowers.flowersList[1].name)
+                newIntent.putExtra("PRICE", FlowersList.flowers.flowersList[1].price)
                 startActivity(newIntent)
             }
         }

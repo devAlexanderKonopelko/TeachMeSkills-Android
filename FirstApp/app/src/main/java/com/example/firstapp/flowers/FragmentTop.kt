@@ -11,7 +11,6 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_top_layout.*
 
 class FragmentTop: Fragment() {
-    private var flower: Flower? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,20 +23,17 @@ class FragmentTop: Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        if (flower != null) {
+        if (FlowersList.flowers.flowersList.size > 0) {
             setViews()
         }
     }
 
-    fun setFlower(flower: Flower?) {
-        this.flower = flower
-    }
-    fun getFlower() = flower
+    private fun setViews() {
+        val flower = FlowersList.flowers.flowersList[0]
 
-    fun setViews() {
-        Picasso.get().load(flower?.url).into(imageFragmentTop)
-        nameTop.text = flower?.name
-        priceTop.text = flower?.price.toString()
+        Picasso.get().load(flower.url).into(imageFragmentTop)
+        nameTop.text = flower.name
+        priceTop.text = flower.price.toString()
     }
 
 }
