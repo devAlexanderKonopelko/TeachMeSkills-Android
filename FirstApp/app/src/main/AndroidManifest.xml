@@ -14,15 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AnimationActivity"/>
+        <activity android:name=".recycler.SnackDetailsActivity"></activity>
+        <activity android:name=".recycler.MainRecyclerActivity" />
+        <activity android:name=".AnimationActivity" />
         <activity android:name=".FlagsActivity" />
         <activity android:name=".SecondTaskActivity" />
         <activity android:name=".FirstTaskActivity" />
-
-        <activity android:name=".flowers.DetailsActivity"/>
-        <activity android:name=".flowers.AddFlowerActivity"/>
-        <activity android:name=".flowers.MainFlowerActivity"/>
-
+        <activity android:name=".flowers.DetailsActivity" />
+        <activity android:name=".flowers.AddFlowerActivity" />
+        <activity android:name=".flowers.MainFlowerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
