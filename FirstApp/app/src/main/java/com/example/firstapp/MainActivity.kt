@@ -36,5 +36,9 @@ class MainActivity : AppCompatActivity() {
             val newIntent = Intent(this, MainRecyclerActivity::class.java)
             startActivity(newIntent)
         }
+
+        main_button_6.setOnClickListener {
+            startActivity(Intent(this, MainDatabaseActivity::class.java))
+        }
     }
 }

@@ -2,6 +2,7 @@
     <string name="app_name">FirstApp</string>
     <string name="see_first_task">See First Task</string>
     <string name="my_first_app">Моё первое приложение</string>
+
     <string name="see_flags">See flags</string>
     <string name="see_animation">See animation</string>
     <string name="armenia">Armenia</string>
@@ -32,6 +33,16 @@
     <string name="name">Name</string>
     <string name="img_url">img url</string>
     <string name="flowers_app">Flowers app</string>
+
     <string name="snacks_for_beer">Snacks for beer</string>
     <string name="recycler_view">Recycler View</string>
+
+    <string name="database_usage">Database usage</string>
+    <string name="write">Write note</string>
+    <string name="find">Find by title</string>
+    <string name="delete">Delete by title</string>
+    <string name="note_title">Note title</string>
+    <string name="note_date">Note date</string>
+    <string name="note_text">Note text</string>
+    <string name="output">Output</string>
 </resources>
