@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".recycler.SnackDetailsActivity"></activity>
+        <activity android:name=".MainDatabaseActivity"/>
+        <activity android:name=".recycler.SnackDetailsActivity" />
         <activity android:name=".recycler.MainRecyclerActivity" />
         <activity android:name=".AnimationActivity" />
         <activity android:name=".FlagsActivity" />
