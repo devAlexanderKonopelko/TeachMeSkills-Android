@@ -32,4 +32,6 @@
     <string name="name">Name</string>
     <string name="img_url">img url</string>
     <string name="flowers_app">Flowers app</string>
+    <string name="snacks_for_beer">Snacks for beer</string>
+    <string name="recycler_view">Recycler View</string>
 </resources>

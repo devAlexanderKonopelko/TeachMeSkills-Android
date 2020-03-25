@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.firstapp.flowers.MainFlowerActivity
+import com.example.firstapp.recycler.MainRecyclerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         main_button_4.setOnClickListener {
             val newIntent = Intent(this, MainFlowerActivity::class.java)
+            startActivity(newIntent)
+        }
+        main_button_5.setOnClickListener {
+            val newIntent = Intent(this, MainRecyclerActivity::class.java)
             startActivity(newIntent)
         }
     }

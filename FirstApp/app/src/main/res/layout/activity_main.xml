@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.example.firstapp.MainActivity">
 
     <Button
         android:id="@+id/main_button_1"
@@ -49,6 +49,16 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:text="@string/flowers_app"/>
+    <Button
+        android:id="@+id/main_button_5"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_button_4"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/recycler_view"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
