@@ -69,6 +69,18 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:text="@string/database_usage"/>
+    <Button
+        android:id="@+id/main_button_7"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_button_6"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/networking"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

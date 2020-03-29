@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.firstapp.flowers.MainFlowerActivity
+import com.example.firstapp.networking.MainNetworkingActivity
 import com.example.firstapp.recycler.MainRecyclerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         main_button_6.setOnClickListener {
             startActivity(Intent(this, MainDatabaseActivity::class.java))
+        }
+
+        main_button_7.setOnClickListener {
+            startActivity(Intent(this, MainNetworkingActivity::class.java))
         }
     }
 }
