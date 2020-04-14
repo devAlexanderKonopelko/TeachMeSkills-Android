@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/cryptoImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/recycler_crypto_item_shape" />
+
+
+    <TextView
+        android:id="@+id/cryptoName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cryptoImage"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/cryptoImage" />
+
+    <TextView
+        android:id="@+id/cryptoPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/cryptoImage" />
+
+    <TextView
+        android:id="@+id/cryptoChangeValue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cryptoImage"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/cryptoImage"
+
+        android:text="@string/_1_hour" />
+
+</RelativeLayout>

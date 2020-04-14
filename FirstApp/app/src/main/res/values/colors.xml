@@ -6,4 +6,11 @@
     <color name="colorGrey">#5C5959</color>
     <color name="colorWhite">#CCC3C3</color>
     <color name="black">#000000</color>
+
+    <color name="changeRed">#D52828</color>
+    <color name="changeGreen">#249C0E</color>
+    <color name="colorBlue">#134CBF</color>
+    <color name="colorYellow">#F6BB23</color>
+    <color name="colorPink">#99209E</color>
+    <color name="colorBrown">#673808</color>
 </resources>

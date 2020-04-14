@@ -45,4 +45,8 @@
     <string name="note_date">Note date</string>
     <string name="note_text">Note text</string>
     <string name="output">Output</string>
+
+    <string name="cryptocurrencies">Cryptocurrencies</string>
+    <string name="_1_hour">1 hour: </string>
+    <string name="networking">Networking</string>
 </resources>
