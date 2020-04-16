@@ -45,5 +45,9 @@ class MainActivity : AppCompatActivity() {
         main_button_7.setOnClickListener {
             startActivity(Intent(this, MainNetworkingActivity::class.java))
         }
+
+        main_button_9.setOnClickListener {
+            startActivity(Intent(this, MapsActivity::class.java))
+        }
     }
 }

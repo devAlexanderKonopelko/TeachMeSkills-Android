@@ -49,4 +49,8 @@
     <string name="cryptocurrencies">Cryptocurrencies</string>
     <string name="_1_hour">1 hour: </string>
     <string name="networking">Networking</string>
+    <string name="google_map">Google Map</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="change_type">Change Type</string>
 </resources>
